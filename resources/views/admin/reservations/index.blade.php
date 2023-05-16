@@ -54,9 +54,6 @@
                                 {{ $resvr->table_id }}
                             </td>
                             <td class="px-6 py-4">
-                                {{ $resvr->table_id }}
-                            </td>
-                            <td class="px-6 py-4">
                                 {{ $resvr->guest_number }}
                             </td>
                             <td
