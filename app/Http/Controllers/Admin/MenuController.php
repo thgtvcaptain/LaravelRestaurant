@@ -86,8 +86,9 @@ class MenuController extends Controller
         ]);
 
         if($request->has('categories')) {
-            $menu->categories()->detach();
-            $menu->categories()->attach($request->categories);
+            // $menu->categories()->detach();
+            // $menu->categories()->attach($request->categories);
+            $menu->categories()->sync($request->categories);
         }
         
         return to_route('admin.menus.index');
