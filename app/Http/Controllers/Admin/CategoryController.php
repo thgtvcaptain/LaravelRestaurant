@@ -39,7 +39,7 @@ class CategoryController extends Controller
             'image' => $image
         ]);
 
-        return to_route('admin.categories.index');
+        return to_route('admin.categories.index')->with('success', 'New category created');
     }
 
     /**
