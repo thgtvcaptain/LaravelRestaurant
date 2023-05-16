@@ -19,4 +19,8 @@ class Table extends Model
         'status' => EnumsTableStatus::class,
         'location' => EnumsTableLocation::class
     ];
+
+    public function reservations() {
+        return $this->hasMany(Reservation::class);
+    }
 }
